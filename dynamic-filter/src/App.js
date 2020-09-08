@@ -3,17 +3,16 @@ import Navbar from "./components/Navbar";
 import List from "./components/List";
 
 function App() {
-  const [filterValue, setFilterValue] = useState("");
+  const [searchParam, setSearchParam] = useState("");
 
-  function handleCallback(e) {
-    const { value } = e.target;
-    setFilterValue(value);
+  function handleSearch(searchParam) {
+    setSearchParam(searchParam);
   }
 
   return (
     <>
-      <Navbar handleCallback={handleCallback} />
-      <List filter={filterValue} />
+      <Navbar handleCallback={handleSearch} />
+      <List searchParam={searchParam} />
     </>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Item from "../Item";
 
-function List(props) {
+function List({ searchParam }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ function List(props) {
 
   return products
     .filter((item) => {
-      return props.filter ? item.title.includes(props.filter) : item;
+      return item.title.toLowerCase().includes(searchParam.toLowerCase());
     })
     .map((item, key) => {
       return (
