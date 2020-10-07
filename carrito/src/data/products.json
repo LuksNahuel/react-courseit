@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Producto grande",
+    "price": 100,
+    "img": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2018/07/cajas-carton-embalaje-pedidos-transporte-paquetes.jpg"
+  },
+  {
+    "title": "Producto chico 1",
+    "price": 50,
+    "img": "https://img.freepik.com/foto-gratis/caja-blanca_74190-269.jpg?size=626&ext=jpg"
+  },
+  {
+    "title": "Producto chico 2",
+    "price": 50,
+    "img": "https://img.freepik.com/foto-gratis/caja-blanca_74190-269.jpg?size=626&ext=jpg"
+  }
+]

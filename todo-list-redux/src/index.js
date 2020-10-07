@@ -1,16 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import AddStartup from "./pages/AddStartup";
+import { initializeStore } from "./store";
+import { Provider } from "react-redux";
+
+const store = initializeStore();
 
 ReactDOM.render(
-  <Router>
-    <Route exact path="/" component={Home} />
-    <Route exact path="/agregar" component={AddStartup} />
-  </Router>,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById("root")
 );
 

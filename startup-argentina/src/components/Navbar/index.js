@@ -1,12 +1,13 @@
 import React from "react";
 import InputTest from "../InputTest";
+import Search from "../Search";
 
 function Navbar() {
   return (
     <>
       <nav>
-        <p>Hola mundo</p>
-        <InputTest />
+        <p>aca va una imagen</p>
+        <Search />
       </nav>
     </>
   );
